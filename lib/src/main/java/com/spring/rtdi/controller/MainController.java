@@ -1,12 +1,16 @@
 package com.spring.rtdi.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.spring.rtdi.dto.EmployeeDTO;
 import com.spring.rtdi.service.IEmployeeService;
 import com.spring.rtdi.vo.EmployeeVO;
 
+@Component("controller")
 public class MainController {
 	
-	//HAS -A property
+		@Autowired
 		private IEmployeeService service;
 
 		// alt+shift+s, o

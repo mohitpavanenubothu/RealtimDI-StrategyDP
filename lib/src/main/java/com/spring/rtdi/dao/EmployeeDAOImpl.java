@@ -6,12 +6,18 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.spring.rtdi.bo.EmployeeBO;
 
+@Component("empOraDAO")
 public class EmployeeDAOImpl implements IEmployeeDAO {
 
 	private static final String EMP_INSERT_QUERY = "INSERT INTO REALTIMEDI_SPRING_EMPLOYEE VALUES(SP_ENO_SEQ.NEXTVAL,?,?,?,?,?)";
 	// HAS-A Property
+	
+	@Autowired
 	private DataSource ds;
 
 	// Alt+shift+s, o

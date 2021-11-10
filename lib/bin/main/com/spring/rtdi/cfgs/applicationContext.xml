@@ -17,20 +17,22 @@
 	</bean>
 
 	<!-- DAO class cfg -->
-	<bean id="empOraDAO" class="com.spring.rtdi.dao.EmployeeDAOImpl">
+	<!-- <bean id="empOraDAO" class="com.spring.rtdi.dao.EmployeeDAOImpl">
 		<constructor-arg name="ds" ref="drdsOra" />
 	</bean>
-
+ -->
 	<!-- service class cfg -->
-	<bean id="empService"
+	<!-- <bean id="empService"
 		class="com.spring.rtdi.service.EmployeeServiceImpl">
 		<constructor-arg name="dao" ref="empOraDAO" />
 	</bean>
-
+ -->
 	<!-- controller cfg -->
-	<bean id="controller" class="com.spring.rtdi.controller.MainController">
+	<!-- <bean id="controller" class="com.spring.rtdi.controller.MainController">
 		<constructor-arg name="service" ref="empService" />
-	</bean>
+	</bean> -->
+	
+	<context:component-scan base-package="com.spring.rtdi"></context:component-scan>
 
 
 

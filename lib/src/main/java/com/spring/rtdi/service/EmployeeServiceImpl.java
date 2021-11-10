@@ -1,12 +1,16 @@
 package com.spring.rtdi.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.spring.rtdi.bo.EmployeeBO;
 import com.spring.rtdi.dao.IEmployeeDAO;
 import com.spring.rtdi.dto.EmployeeDTO;
 
+@Component("empService")
 public class EmployeeServiceImpl implements IEmployeeService {
 
-	// HAS -A property
+	@Autowired
 	private IEmployeeDAO dao;
 
 	// alt+shift+s , o
