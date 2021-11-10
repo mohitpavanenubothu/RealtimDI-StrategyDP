@@ -2,12 +2,14 @@ package com.spring.rtdi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import com.spring.rtdi.dto.EmployeeDTO;
 import com.spring.rtdi.service.IEmployeeService;
 import com.spring.rtdi.vo.EmployeeVO;
 
 @Component("controller")
+@Controller
 public class MainController {
 	
 		@Autowired

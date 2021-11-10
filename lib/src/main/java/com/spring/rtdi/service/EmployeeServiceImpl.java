@@ -2,12 +2,14 @@ package com.spring.rtdi.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.spring.rtdi.bo.EmployeeBO;
 import com.spring.rtdi.dao.IEmployeeDAO;
 import com.spring.rtdi.dto.EmployeeDTO;
 
 @Component("empService")
+@Service
 public class EmployeeServiceImpl implements IEmployeeService {
 
 	@Autowired
