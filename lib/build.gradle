@@ -36,7 +36,7 @@ dependencies {
 	implementation group: 'com.oracle.ojdbc', name: 'ojdbc8', version: '19.3.0.0'
 	
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok
-	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+	implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
 	
 	
 	
