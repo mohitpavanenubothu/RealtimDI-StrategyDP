@@ -8,8 +8,8 @@ import com.spring.rtdi.dto.EmployeeDTO;
 import com.spring.rtdi.service.IEmployeeService;
 import com.spring.rtdi.vo.EmployeeVO;
 
-@Component("controller")
-@Controller
+//@Component("controller")
+@Controller("controller")
 public class MainController {
 	
 		@Autowired

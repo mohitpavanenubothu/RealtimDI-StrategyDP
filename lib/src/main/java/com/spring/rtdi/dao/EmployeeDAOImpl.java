@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 
 import com.spring.rtdi.bo.EmployeeBO;
 
-@Component("empOraDAO")
-@Repository
+//@Component("empOraDAO")
+@Repository("empOraDAO")
 public class EmployeeDAOImpl implements IEmployeeDAO {
 
 	private static final String EMP_INSERT_QUERY = "INSERT INTO REALTIMEDI_SPRING_EMPLOYEE VALUES(SP_ENO_SEQ.NEXTVAL,?,?,?,?,?)";
